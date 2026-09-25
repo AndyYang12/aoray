@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // jcenter() is retired upstream; use its read-only mirror
+        maven { url 'https://maven.aliyun.com/repository/jcenter'; content { includeGroup 'com.tbruyelle.rxpermissions' } }
+    }
+}
+rootProject.name = "V2rayNG"
+include ':app'
